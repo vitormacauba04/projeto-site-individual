@@ -51,8 +51,8 @@ CREATE TABLE aviso (
 
 CREATE TABLE medida (
 	id INT PRIMARY KEY IDENTITY(1,1),
-	temperatura DOUBLE,
-	umidade DOUBLE,
+	temperatura DECIMAL,
+	umidade DECIMAL,
 	momento DATETIME,
 	fk_aquario INT
 );
