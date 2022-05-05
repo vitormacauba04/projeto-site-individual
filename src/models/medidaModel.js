@@ -5,14 +5,14 @@ function buscarUltimasMedidas(idAquario, limite_linhas) {
     instrucaoSql = ''
     
     if (process.env.AMBIENTE_PROCESSO == "producao") {
-        instrucaoSql = `select 
+        instrucaoSql = `select top ${limite_linhas}
                         temperatura, 
                         umidade, 
                         momento,
                         CONVERT(varchar, momento, 108) as momento_grafico
                     from medida
                     where fk_aquario = ${idAquario}
-                    order by id desc limit ${limite_linhas}`;
+                    order by id desc`;
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
         instrucaoSql = `select 
                         temperatura, 
@@ -36,12 +36,12 @@ function buscarMedidasEmTempoReal(idAquario) {
     instrucaoSql = ''
     
     if (process.env.AMBIENTE_PROCESSO == "producao") {       
-        instrucaoSql = `select 
+        instrucaoSql = `select top 1
                         temperatura, 
                         umidade, CONVERT(varchar, momento, 108) as momento_grafico, 
                         fk_aquario 
                         from medida where fk_aquario = ${idAquario} 
-                    order by id desc limit 1`;
+                    order by id desc`;
         
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
         instrucaoSql = `select 
