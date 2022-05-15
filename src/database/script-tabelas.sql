@@ -63,6 +63,8 @@ create table aquario (
 	descricao VARCHAR(300)
 );
 
+/* altere esta tabela de acordo com o que está em INSERT de sua API do arduino */
+
 CREATE TABLE medida (
 	id INT PRIMARY KEY IDENTITY(1,1),
 	dht11_umidade DECIMAL,
