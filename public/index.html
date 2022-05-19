@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AcquaTec | Página Inicial</title>
+    <title>Info Ariana | Página Inicial</title>
 
     <script src="./js/funcoes.js"></script>
 
-    <link rel="icon" href="./assets/icon/favicon.ico">
+    <link rel="icon" href="./assets/icon/icon-ari_1.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link
@@ -18,67 +18,142 @@
         rel="stylesheet"> -->
 </head>
 
-<body>
+<body class="body_index">
     <div class="header">
         <div class="container">
-            <h1 class="titulo">AcquaTec</h1>
+            <h1 class="titulo"><a class="link_titulo" href="./index.html"><img src="../logo-info-ari.png" style="width: 170px; height: auto;"></a></h1>
             <ul class="navbar">
-                <li class="agora">Inicial</li>
-                <li>
-                    <a href="./simulador.html">Simulador</a>
-                </li>
-                <li>|</li>
-                <li>
-                    <a href="./login.html">Login</a>
-                </li>
-                <li>
-                    <a href="./cadastro.html">Cadastro</a>
-                </li>
+                <li><a class="a1" href="./index.html"><b>Inicial</b></a></li>
+                <li><a class="a1" href="./simulador.html">Biografia</a></li>
+                <li><a class="a1" href="./login.html">Login</a></li>
+                <li><a class="a1" href="./cadastro.html">Cadastro</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="banner">
-        <div class="container">
-            <p>
-                Preservando <span>hoje</span> para existirem <span>amanhã</span>.
-            </p>
+    <div class="slider_index">
+        <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <!--Fim Radio Buttons-->
+
+            <!--Slide images-->
+            <div class="slide first">
+                <a href="https://www.youtube.com/watch?v=bD6Eh7YbhTA"><img src="./assets/imgs/info-ari-thumb-yt.png" alt="Imagem 1" style="width: 1355px"></a>
+            </div>
+
+            <div class="slide ">
+                <a href="https://www.youtube.com/watch?v=Lj8XTBEyFPM"><img src="./assets/imgs/info-ari-thumb-yt2.jpg" alt="Imagem 2" style="width: 1355px"></a>
+            </div>
+
+            <div class="slide ">
+                <a href="https://www.youtube.com/watch?v=HRdA7H_PWNs"><img src="./assets/imgs/info-ari-thumb-yt3.jpg" alt="Imagem 3"></a>
+            </div>
+
+            <div class="slide ">
+                <a href="https://www.youtube.com/watch?v=E3Wk1-63x38"><img src="./assets/imgs/info-ari-thumb-yt4.jpg" alt="Imagem 4"></a>
+            </div>
+
+            <div class="slide ">
+                <a href="https://rembeauty.com/"><img src="./assets/imgs/rem-beauty-out-now.jpg" alt="Imagem 5"></a>
+            </div>
+
+            <div class="slide ">
+                <a href="https://www.youtube.com/watch?v=VronettmNRI"><img src="./assets/imgs/ariana-live-vevo.jpg" alt="Imagem 6"></a>
+            </div>
+            <!--Fim Slide images-->
+
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+            </div>
+
         </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+        </div>
+    </div>
+
     </div>
 
     <div class="social">
         <div class="container">
             <div class="boxes">
                 <div class="box">
-                    <img src="./assets/imgs/planet-earth_color.png" alt="icone da missão">
-                    <h4>Missão</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1PfYnYcpw8w?utm_source=generator&theme=0" width="500px" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
-
                 <div class="box">
-                    <img src="./assets/imgs/lightbulb_color.png" alt="icone da visão">
-                    <h4>Visão</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="box">
-                    <img src="./assets/imgs/growth_color.png" alt="icone dos valores">
-                    <h4>Valores</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/74vajFwEwXJ61OW1DKSPEa?utm_source=generator&theme=0" width="500px" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
             </div>
         </div>
-
-
     </div>
 
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
+    <!-- Rodapé -->
+    <div class="rodape">
+        <div id="scroll"></div>
+        <div class="container_rodape">
+            <!-- contato -->
+            <div class="contato">
+                <div class="informacoes_contato">
+                    <img class="img_rodape" src="../logo-info-ari.png" style="height: 400px;width: 300px;">
+                    <br>
+                    <div class="contato_imagem">
+                        <img src="assets/mail-icon-white-12.png" alt="">
+                        <span>contato@infoari.com.br</span>
+                    </div>
+                    <div class="contato_imagem">
+                        <img id="imagem_telefone" src="assets/telefoneSymbol.png" alt="">
+                        <span>(11) 95272-2397</span>
+                    </div>
+
+                    <h2>Redes sociais</h2>
+                    <div class="redes_sociais_imagens">
+                        <a class="link_facebook" href="https://twitter.com/infoari?s=20&t=26y9FwVgUMybCGzmHuarIg"><img src="assets/facebookSymbol.png" alt=""></a>
+                        <a class="link_insta" href="https://www.instagram.com/portalinfoari/"><img src="assets/instagramSymbol.png" alt=""></a>
+                        <a class="link_youtube" href="https://www.youtube.com/channel/UCaNbkXXcLgTaouW1NzXBp5g"><img src="assets/linkedinSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--footer fim-->
+    </div>
 </body>
 
 </html>
+
+<!--Inicio do Script Slider-->
+<script>
+    let count = 1;
+    document.getElementById("radio1").checked = true;
+
+    setInterval(function () {
+        nextImagem();
+    }, 5500)
+
+    function nextImagem() {
+        count++;
+        if (count > 6) {
+            count = 1;
+        }
+
+        document.getElementById("radio" + count).checked = true;
+    }
+</script>
+<!--Fim do Script Slider-->
