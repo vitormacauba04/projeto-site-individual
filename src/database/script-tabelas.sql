@@ -7,5 +7,8 @@ CREATE TABLE usuario (
 	nome VARCHAR(50),
 	email VARCHAR(50),
 	senha VARCHAR(50),
-	musica VARCHAR(50)
+	albumFav VARCHAR(17)
 );
+
+SHOW TABLES;
+SELECT * FROM usuario;
