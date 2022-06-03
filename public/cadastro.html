@@ -8,13 +8,12 @@
 
     <title>Info Ariana | Cadastro</title>
 
-
     <script src="./js/funcoes.js"></script>
-
 
     <link rel="icon" href="./assets/icon/icon-ari_1.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
@@ -22,7 +21,7 @@
 
     <!--header inicio-->
     <div class="header">
-        <div class="container">
+        <div class="container-h">
             <h1 class="titulo"><a class="link_titulo" href="./index.html"><img src="./assets/logo-info-ari.png" style="width: 170px; height: auto;"></a></h1>
             <ul class="navbar">
                 <li><a class="a1" href="./index.html">Inicial</a></li>
@@ -57,19 +56,17 @@
                     <span class="tipo_campo">Álbum favorito:</span>
                     <div class="select-style">
                     <select id="sel_album">
-                    </p>
                     <option value="">--Selecione o álbum--</option>
-                    <option value="yt">"Yours Truly"</option>
-                    <option value="me">"My Everything"</option>
-                    <option value="dw">"Dangerous Woman"</option>
-                    <option value="swt">"Sweetener"</option>
-                    <option value="tun">"thank u, next"</option>
-                    <option value="pst">"Positions"</option>
+                    <option value="1">Yours Truly</option>
+                    <option value="2">My Everything</option>
+                    <option value="3">Dangerous Woman</option>
+                    <option value="4">Sweetener</option>
+                    <option value="5">thank u, next</option>
+                    <option value="6">Positions</option>
                     </select>
                 </div>
-
-                    <button class="btn" onclick="cadastrar()">Cadastrar</button>
-                </div>
+                
+                <button class="btn" onclick="cadastrar()">Cadastrar</button>
                 <div id="div_aguardar" class="loading-div">
                     <img src="./assets/circle-loading.gif" id="loading-gif">
                 </div>
@@ -82,13 +79,13 @@
     </div>
 
     <!-- Rodapé -->
-    <div class="rodape">
+    <div class="rodape" style="margin-top: 100px;">
         <div id="scroll"></div>
         <div class="container_rodape">
             <!-- contato -->
             <div class="contato">
                 <div class="informacoes_contato">
-                    <img class="img_rodape" src="../logo-info-ari.png" style="height: 400px;width: 300px;">
+                    <img class="img_rodape" src="./assets/logo-info-ari.png" style="height: 400px;width: 300px;">
                     <br>
                     <div class="contato_imagem">
                         <img src="assets/mail-icon-white-12.png" alt="">
@@ -149,7 +146,7 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
-                musicaServer: albumVar
+                albumServer: albumVar
             })
         }).then(function (resposta) {
 

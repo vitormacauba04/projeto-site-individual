@@ -13,6 +13,7 @@
     <link rel="icon" href="./assets/icon/icon-ari_1.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
@@ -21,7 +22,7 @@
     <!--Header-->
 
     <div class="header">
-        <div class="container">
+        <div class="container-h">
             <h1 class="titulo"><a class="link_titulo" href="./index.html"><img src="./assets/logo-info-ari.png" style="width: 170px; height: auto;"></a></h1>
             <ul class="navbar">
                 <li><a class="a1" href="./index.html">Inicial</a></li>
@@ -64,20 +65,20 @@
     </div>
 
     <!-- Rodapé -->
-    <div class="rodape">
+    <div class="rodape" style="margin-top: 100px;">
         <div id="scroll"></div>
         <div class="container_rodape">
             <!-- contato -->
             <div class="contato">
                 <div class="informacoes_contato">
-                    <img class="img_rodape" src="../logo-info-ari.png" style="height: 400px;width: 300px;">
+                    <img class="img_rodape" src="./assets/logo-info-ari.png" style="height: 400px;width: 300px;">
                     <br>
                     <div class="contato_imagem">
-                        <img src="assets/mail-icon-white-12.png" alt="">
+                        <img src="./assets/mail-icon-white-12.png" alt="">
                         <span>contato@infoari.com.br</span>
                     </div>
                     <div class="contato_imagem">
-                        <img id="imagem_telefone" src="assets/telefoneSymbol.png" alt="">
+                        <img id="imagem_telefone" src="./assets/telefoneSymbol.png" alt="">
                         <span>(11) 95272-2397</span>
                     </div>
 
@@ -141,7 +142,7 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "./dashboard/dashboard.html";
                     }, 1000); // apenas para exibir o loading
 
                 });

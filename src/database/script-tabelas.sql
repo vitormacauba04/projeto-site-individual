@@ -2,13 +2,30 @@ CREATE DATABASE infoari;
 
 USE infoari;
 
+CREATE TABLE albumFav (
+	idAlbum INT PRIMARY KEY AUTO_INCREMENT,
+	titulo VARCHAR (35)
+);
+
 CREATE TABLE usuario (
-	id INT PRIMARY KEY AUTO_INCREMENT,
+	idUsuario INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
 	email VARCHAR(50),
 	senha VARCHAR(50),
-	albumFav VARCHAR(17)
-);
+	fkAlbum INT,
+	foreign key(fkAlbum) references albumFav(idAlbum)
+) auto_increment = 1000;
 
 SHOW TABLES;
 SELECT * FROM usuario;
+SELECT * FROM albumFav;
+desc usuario;
+
+INSERT INTO albumFav VALUES (null, 'Yours Truly'),
+                            (null, 'My Everything'),
+                            (null, 'Dangerous Woman'),
+                            (null, 'Sweetener'),
+                            (null, 'thank u, next'),
+                            (null, 'Positions');
+                            
+SELECT albumFav.titulo, COUNT(fkAlbum) AS quantidade FROM usuario JOIN albumFav ON usuario.fkAlbum = albumFav.idAlbum GROUP BY albumFav.titulo;
