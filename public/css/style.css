@@ -463,12 +463,11 @@ input {
 
 .dash-right {
   display: flex;
-  width: 75%;
+  width: 80%;
   height: fit-content;
   background-color: #161618;
   position: relative;
-  top: 0;
-  left: 25%;
+  top: 5%;
 }
 
 .hello {
@@ -529,7 +528,12 @@ input {
   margin-bottom: 100px;
   cursor: pointer;
 }
-
+.graph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+}
 .album_graphic {
   background-color: #00000071;
   display: flex;

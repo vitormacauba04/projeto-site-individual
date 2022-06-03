@@ -24,38 +24,42 @@
 
 <body onload="validarSessao(), atualizarFeed()">
 
-        <div class="header-left">
-            <h1 class="titulo"><a class="link_titulo" href="../index.html"><img src="../assets/logo-info-ari.png" style="width: 160px; height: auto;"></a></h1>
+    <div class="header-left">
+        <h1 class="titulo"><a class="link_titulo" href="../index.html"><img src="../assets/logo-info-ari.png"
+                    style="width: 160px; height: auto;"></a></h1>
 
-            <div class="hello">
-                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./cards.html">
-                    <h3>Recordes</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav">
-                <h3><u>Statistics</u></h3>
-            </div>
-
-            <div class="btn-logout" onclick="limparSessao()">
-                <h3>Sair</h3>
-            </div>
-
+        <div class="hello">
+            <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
         </div>
 
-        <div class="dash">
+        <div class="btn-nav-white">
+            <a href="./cards.html">
+                <h3>Recordes</h3>
+            </a>
+        </div>
+
+        <div class="btn-nav">
+            <h3><u>Statistics</u></h3>
+        </div>
+
+        <div class="btn-logout" onclick="limparSessao()">
+            <h3>Sair</h3>
+        </div>
+
+    </div>
+
+    <div class="dash">
+        <div class="graph">
             <div class="btns-dash">
                 <button class="btn-chart" onclick="obterDadosGrafico(1)">Álbum favorito</button>
             </div>
-
+            
             <div class="album_graphic">
-                <canvas id="canvas_grafico" style="display: block;" width="700px" height="390px" class="chartjs-render-monitor"></canvas>
+                <canvas id="canvas_grafico" style="display: block;" width="700px" height="390px"
+                class="chartjs-render-monitor"></canvas>
             </div>
         </div>
+    </div>
 
 
 </body>
@@ -67,7 +71,7 @@
 
     window.onload = obterDadosGrafico();
 
-    b_usuario.innerHTML = sessionStorage.usuario.nome;
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
 
     function alterarTitulo(albumFav) {
@@ -195,7 +199,7 @@
                     // tirando e colocando valores no gráfico
                     // dados.labels.shift(); // apagar o primeiro
                     // dados.labels.push(novoRegistro[0].nome); // incluir um novo momento
-                   
+
                     dados.labels = [];
                     dados.datasets[0].data = [];
 
