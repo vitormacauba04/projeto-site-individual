@@ -34,12 +34,12 @@
 
         <div class="btn-nav-white">
             <a href="./cards.html">
-                <h3>Recordes</h3>
+                <h3>Prêmios</h3>
             </a>
         </div>
 
         <div class="btn-nav">
-            <h3><u>Statistics</u></h3>
+            <h3><u>Votação</u></h3>
         </div>
 
         <div class="btn-logout" onclick="limparSessao()">
@@ -55,8 +55,12 @@
             </div>
             
             <div class="album_graphic">
-                <canvas id="canvas_grafico" style="display: block;" width="700px" height="390px"
+                <canvas id="canvas_grafico" style="display: block;" width="800px" height="400px"
                 class="chartjs-render-monitor"></canvas>
+            </div>
+
+            <div class="quant_votos">
+                <b id="quant_votos2">25 usuários já votaram em seu álbum favorito!</b>
             </div>
         </div>
     </div>
@@ -69,7 +73,7 @@
 <script>
     let proximaAtualizacao;
 
-    window.onload = obterDadosGrafico();
+    window.onload = obterDadosGrafico(1);
 
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
@@ -123,20 +127,12 @@
             datasets: [
                 {
                     yAxisID: 'y-quantidade',
-                    label: 'Quantidade',
+                    label: ['Yours Truly', 'My Everything', 'Dangerous Woman', 'Sweetener', 'thank u, next', 'Positions'],
                     borderColor: ['rgb(250, 128, 114)', 'rgb(128, 128, 128)', 'rgb(0, 0, 0)', 'rgb(242, 183, 132)', 'rgb(255, 34, 255)', 'rgb(160, 225, 96)'],
                     backgroundColor: ['rgb(250, 128, 114)', 'rgb(128, 128, 128)', 'rgb(0, 0, 0)', 'rgb(242, 183, 132)', 'rgb(255, 34, 255)', 'rgb(160, 225, 96)'],
                     fill: true,
                     data: []
                 }
-                // {
-                //   yAxisID: 'y-quantidade',
-                //   label: 'Quantidade',
-                //   borderColor: '#ffffff',
-                //   backgroundColor: ['#40120f','#012c07','#aa8e08','#011f3b',],
-                //   fill: true,
-                //   data: []
-                // }
             ]
         };
 

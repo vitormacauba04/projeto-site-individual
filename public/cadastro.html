@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="body_cadastro">
@@ -22,7 +24,8 @@
     <!--header inicio-->
     <div class="header">
         <div class="container-h">
-            <h1 class="titulo"><a class="link_titulo" href="./index.html"><img src="./assets/logo-info-ari.png" style="width: 170px; height: auto;"></a></h1>
+            <h1 class="titulo"><a class="link_titulo" href="./index.html"><img src="./assets/logo-info-ari.png"
+                        style="width: 170px; height: auto;"></a></h1>
             <ul class="navbar">
                 <li><a class="a1" href="./index.html">Inicial</a></li>
                 <li><a class="a1" href="./simulador.html">Biografia</a></li>
@@ -55,57 +58,71 @@
 
                     <span class="tipo_campo">Álbum favorito:</span>
                     <div class="select-style">
-                    <select id="sel_album">
-                    <option value="">--Selecione o álbum--</option>
-                    <option value="1">Yours Truly</option>
-                    <option value="2">My Everything</option>
-                    <option value="3">Dangerous Woman</option>
-                    <option value="4">Sweetener</option>
-                    <option value="5">thank u, next</option>
-                    <option value="6">Positions</option>
-                    </select>
-                </div>
-                
-                <button class="btn" onclick="cadastrar()">Cadastrar</button>
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
-
-                <div id="div_erros_login">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Rodapé -->
-    <div class="rodape" style="margin-top: 100px;">
-        <div id="scroll"></div>
-        <div class="container_rodape">
-            <!-- contato -->
-            <div class="contato">
-                <div class="informacoes_contato">
-                    <img class="img_rodape" src="./assets/logo-info-ari.png" style="height: 400px;width: 300px;">
-                    <br>
-                    <div class="contato_imagem">
-                        <img src="assets/mail-icon-white-12.png" alt="">
-                        <span>contato@infoari.com.br</span>
+                        <select id="sel_album">
+                            <option value="">--Selecione o álbum--</option>
+                            <option value="1">Yours Truly</option>
+                            <option value="2">My Everything</option>
+                            <option value="3">Dangerous Woman</option>
+                            <option value="4">Sweetener</option>
+                            <option value="5">thank u, next</option>
+                            <option value="6">Positions</option>
+                        </select>
                     </div>
-                    <div class="contato_imagem">
-                        <img id="imagem_telefone" src="assets/telefoneSymbol.png" alt="">
-                        <span>(11) 95272-2397</span>
+                    <div class="math">
+                        <p id="valor1"></p>
+                        <p> + </p>
+                        <p id="valor2"></p>
+                        <p> =</p>
+
+                        <input class="input_cap" id="totalvalores" type="text" name="totalvalores" required="">
                     </div>
 
-                    <h2>Redes sociais</h2>
-                    <div class="redes_sociais_imagens">
-                        <a class="link_facebook" href="https://twitter.com/infoari?s=20&t=26y9FwVgUMybCGzmHuarIg"><img src="assets/facebookSymbol.png" alt=""></a>
-                        <a class="link_insta" href="https://www.instagram.com/portalinfoari/"><img src="assets/instagramSymbol.png" alt=""></a>
-                        <a class="link_youtube" href="https://www.youtube.com/channel/UCaNbkXXcLgTaouW1NzXBp5g"><img src="assets/linkedinSymbol.png" alt="">
+                    <p id="aviso"></p>
+
+                    <button class="btn" onclick="cadastrar()">Cadastrar</button>
+                    <div id="div_aguardar" class="loading-div">
+                        <img src="./assets/circle-loading.gif" id="loading-gif">
+                    </div>
+
+                    <div id="div_erros_login">
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Rodapé -->
+        <div class="rodape" style="margin-top: 100px;">
+            <div id="scroll"></div>
+            <div class="container_rodape">
+                <!-- contato -->
+                <div class="contato">
+                    <div class="informacoes_contato">
+                        <img class="img_rodape" src="./assets/logo-info-ari.png" style="height: 400px;width: 300px;">
+                        <br>
+                        <div class="contato_imagem">
+                            <img src="assets/mail-icon-white-12.png" alt="">
+                            <span>contato@infoari.com.br</span>
+                        </div>
+                        <div class="contato_imagem">
+                            <img id="imagem_telefone" src="assets/telefoneSymbol.png" alt="">
+                            <span>(11) 95272-2397</span>
+                        </div>
+
+                        <h2>Redes sociais</h2>
+                        <div class="redes_sociais_imagens">
+                            <a class="link_facebook"
+                                href="https://twitter.com/infoari?s=20&t=26y9FwVgUMybCGzmHuarIg"><img
+                                    src="assets/facebookSymbol.png" alt=""></a>
+                            <a class="link_insta" href="https://www.instagram.com/portalinfoari/"><img
+                                    src="assets/instagramSymbol.png" alt=""></a>
+                            <a class="link_youtube" href="https://www.youtube.com/channel/UCaNbkXXcLgTaouW1NzXBp5g"><img
+                                    src="assets/linkedinSymbol.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 </body>
@@ -122,8 +139,9 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var albumVar = sel_album.value;
+        var totalvalores = totalvalores_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || albumVar == "") {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || albumVar == "" || totalvalores == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
@@ -132,6 +150,16 @@
         }
         else {
             setInterval(sumirMensagem, 5000)
+        }
+
+        var soma = valor1 + valor2
+
+        if (totalvalores != soma) {
+            alert(`reCaptcha inválido`);
+            return
+        }
+
+        if (totalvalores == soma) {
         }
 
         // Enviando o valor da nova input
@@ -177,4 +205,14 @@
     function sumirMensagem() {
         cardErro.style.display = "none"
     }
+
+    var valor1 = Math.floor((Math.random() * 10) + 1);
+
+    var valor2 = Math.floor((Math.random() * 10) + 1);
+
+    document.getElementById("valor1").innerHTML = valor1;
+
+    document.getElementById("valor2").innerHTML = valor2;
+
+    document.getElementById("enviar").setAttribute("disabled", "");
 </script>

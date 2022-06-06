@@ -315,7 +315,7 @@ a.a1:hover {
 }
 
 .banner .container .card {
-  background-color: #e5e5e594;
+  background-color: #e5e5e5;
   height: fit-content;
   width: 400px;
   display: flex;
@@ -341,6 +341,10 @@ a.a1:hover {
 
 .banner #div_erros_login {
   margin-top: 15px;
+  margin-bottom: 10px;
+  font-size:x-large;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-align: center;
 }
 
 button {
@@ -393,7 +397,7 @@ input {
   display: flex;
   padding: 10px;
   border: 2px solid #000000;
-  width: 205px;
+  width: 260px;
   border-radius: 10px;
   overflow: hidden;
   background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
@@ -451,8 +455,8 @@ input {
   top: 0;
   left: 0;
   z-index: 999;
-  height: 650px;
-  width: 335px;
+  height: 100vh;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -539,6 +543,38 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.quant_votos {
+  margin-top: 5%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quant_votos2 {
+  background-color: #ffffff74;
+  border: 3px solid #e6005a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.math {
+  width: 200px;
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.input_cap {
+  width: 35px;
+  height: 20px;
 }
 
 /* pagina extra - simulador */

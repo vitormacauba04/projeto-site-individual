@@ -28,4 +28,8 @@ INSERT INTO albumFav VALUES (null, 'Yours Truly'),
                             (null, 'thank u, next'),
                             (null, 'Positions');
                             
+INSERT INTO usuario VALUES 	(null, 'Vitor Macauba', 'vitormacauba2@gmail.com', '12345_', 6);
+                            
 SELECT albumFav.titulo, COUNT(fkAlbum) AS quantidade FROM usuario JOIN albumFav ON usuario.fkAlbum = albumFav.idAlbum GROUP BY albumFav.titulo;
+SELECT COUNT(*) AS 'QTD FAVORITADO' FROM usuario;
+SELECT usuario.nome, albumFav.titulo FROM usuario JOIN albumFav ON fkAlbum = idAlbum WHERE idUsuario = 1020;
