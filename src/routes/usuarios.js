@@ -20,8 +20,4 @@ router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
 
-router.get("/ver-album-favorito/:idUsuario", function (req, res) {
-    usuarioController.verAlbumFavorito(req, res);
-});
-
 module.exports = router;

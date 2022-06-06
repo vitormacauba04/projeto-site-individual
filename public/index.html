@@ -116,6 +116,17 @@
                     href="https://twitter.com/infoari?ref_src=twsrc%5Etfw">Tweets by infoari</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
+            <h1 class="h1_container">Qual seu humor hoje?</h1>
+            <div class="select-style-humor" onchange="humor()">
+                <select id="sel_humor">
+                    <option value="">--Selecione o humor--</option>
+                    <option value="feliz">Feliz</option>
+                    <option value="triste">Triste</option>
+                    <option value="sono">Sonolento(a)</option>
+                    <option value="bravo">Bravo(a)</option>
+                </select>
+            </div>
+            <div id="div_humor" class="div_humor-style"></div>
         </div>
     </div>
 
@@ -171,6 +182,23 @@
         }
 
         document.getElementById("radio" + count).checked = true;
+    }
+
+    function humor() {
+        var humor = sel_humor.value
+        
+        if (humor == 'feliz') {
+            div_humor.innerHTML = `<img src='http://pa1.narvii.com/6823/cbde755133860da4e2b020bd1eb7d7f29da06438_00.gif'>`
+        }
+        if (humor == 'triste') {
+            div_humor.innerHTML = `<img src='https://data.whicdn.com/images/278048423/original.gif'>`
+        }
+        if (humor == 'sono') {
+            div_humor.innerHTML = `<img src='https://i.gifer.com/VOh7.gif'>`
+        }
+        if (humor == 'bravo') {
+            div_humor.innerHTML = `<img src='https://c.tenor.com/HFaVpkRe-fcAAAAC/ariana-grande-music.gif'>`
+        }
     }
 </script>
 <!--Fim do Script Slider-->
