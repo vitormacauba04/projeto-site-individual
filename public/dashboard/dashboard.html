@@ -53,14 +53,14 @@
             <div class="btns-dash">
                 <button class="btn-chart" onclick="obterDadosGrafico(1)">Álbum favorito</button>
             </div>
-            
+
             <div class="album_graphic">
                 <canvas id="canvas_grafico" style="display: block;" width="800px" height="400px"
-                class="chartjs-render-monitor"></canvas>
+                    class="chartjs-render-monitor"></canvas>
             </div>
 
             <div class="quant_votos">
-                <b id="quant_votos2">25 usuários já votaram em seu álbum favorito!</b>
+                <b id="quant_votos2">26 usuários já votaram em seu álbum favorito!</b>
             </div>
         </div>
     </div>
@@ -154,12 +154,12 @@
                 stacked: false,
                 title: {
                     display: false,
-                    text: 'Dados capturados'
+                    text: 'Dados recolhidos'
                 },
                 scales: {
                     yAxes: [{
                         type: 'linear',
-                        display: true,
+                        display: false,
                         position: 'left',
                         id: 'y-quantidade',
                         ticks: {

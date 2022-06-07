@@ -74,7 +74,7 @@
                         <p id="valor2"></p>
                         <p> =</p>
 
-                        <input class="input_cap" id="totalvalores" type="text" name="totalvalores" required="">
+                        <input class="input_cap" id="totalvalores_input" type="text" required="">
                     </div>
 
                     <p id="aviso"></p>
@@ -139,9 +139,9 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var albumVar = sel_album.value;
-        var totalvalores = totalvalores_input.value;
+        var somaVar = totalvalores_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || albumVar == "" || totalvalores == "") {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || albumVar == "" || somaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
@@ -154,12 +154,12 @@
 
         var soma = valor1 + valor2
 
-        if (totalvalores != soma) {
+        if (somaVar != soma) {
             alert(`reCaptcha inválido`);
             return
         }
 
-        if (totalvalores == soma) {
+        if (somaVar == soma) {
         }
 
         // Enviando o valor da nova input
