@@ -455,6 +455,41 @@ input {
   padding: 3%;
 }
 
+.ariana_yuh_gif {
+  height: 250px;
+  width: 250px;
+  align-self: center;
+  padding: 0px 0px 15px 0px;
+}
+
+.input_yuh-style {
+  align-items: center;
+  margin: auto;
+  display: flex;
+}
+
+.btn_yuh {
+  font-family: "Barlow", sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: #ffffff;
+  background-color: #e6005a;
+  width: 150px;
+  align-self: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.div_yuh-style {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+}
+
 .btn {
   font-family: "Barlow", sans-serif;
   border: 0;

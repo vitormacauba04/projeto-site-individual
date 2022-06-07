@@ -116,6 +116,7 @@
                     href="https://twitter.com/infoari?ref_src=twsrc%5Etfw">Tweets by infoari</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
+
             <h1 class="h1_container">Qual seu humor hoje?</h1>
             <div class="select-style-humor" onchange="humor()">
                 <select id="sel_humor">
@@ -127,6 +128,12 @@
                 </select>
             </div>
             <div id="div_humor" class="div_humor-style"></div>
+
+            <h1 class="h1_container">Quantos "yuh" você consegue inserir?</h1>
+            <img src="https://c.tenor.com/XlHsNU_N_f4AAAAM/ariana-grande-ariana-grande-yuhh.gif" class="ariana_yuh_gif">
+            <input type="number" id="input_yuh" class="input_yuh-style">
+            <button onclick="colocarYuh()" class="btn_yuh">Escrever Yuh</button>
+            <div id="div_yuh" class="div_yuh-style"></div>
         </div>
     </div>
 
@@ -166,8 +173,8 @@
 
 </html>
 
-<!--Inicio do Script Slider-->
 <script>
+    // Inicio do Script Slider
     let count = 1;
     document.getElementById("radio1").checked = true;
 
@@ -184,21 +191,36 @@
         document.getElementById("radio" + count).checked = true;
     }
 
+    // Fim do Script Slider
+
+    let imagens = ['http://pa1.narvii.com/6823/cbde755133860da4e2b020bd1eb7d7f29da06438_00.gif', 'https://data.whicdn.com/images/278048423/original.gif', 'https://i.gifer.com/VOh7.gif', 'https://c.tenor.com/HFaVpkRe-fcAAAAC/ariana-grande-music.gif']
+
     function humor() {
         var humor = sel_humor.value
-        
+
+        if (humor == '') {
+            div_humor.innerHTML = ''
+        }
         if (humor == 'feliz') {
-            div_humor.innerHTML = `<img src='http://pa1.narvii.com/6823/cbde755133860da4e2b020bd1eb7d7f29da06438_00.gif'>`
+            div_humor.innerHTML = `<img src=${imagens[0]}>`
         }
         if (humor == 'triste') {
-            div_humor.innerHTML = `<img src='https://data.whicdn.com/images/278048423/original.gif'>`
+            div_humor.innerHTML = `<img src=${imagens[1]}>`
         }
         if (humor == 'sono') {
-            div_humor.innerHTML = `<img src='https://i.gifer.com/VOh7.gif'>`
+            div_humor.innerHTML = `<img src=${imagens[2]}>`
         }
         if (humor == 'bravo') {
-            div_humor.innerHTML = `<img src='https://c.tenor.com/HFaVpkRe-fcAAAAC/ariana-grande-music.gif'>`
+            div_humor.innerHTML = `<img src=${imagens[3]}>`
+        }
+    }
+
+    function colocarYuh() {
+        let numYuh = input_yuh.value;
+        div_yuh.innerHTML = ""
+
+        for (let i = 0; i < numYuh; i++) {
+            div_yuh.innerHTML += "Yuh<br>";
         }
     }
 </script>
-<!--Fim do Script Slider-->
