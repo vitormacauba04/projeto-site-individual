@@ -452,14 +452,14 @@ input {
   align-items: center;
   margin: auto;
   display: flex;
-  padding: 3%;
+  padding: 1%;
 }
 
 .ariana_yuh_gif {
   height: 250px;
   width: 250px;
   align-self: center;
-  padding: 0px 0px 15px 0px;
+  padding: 0% 0% 2% 0%;
 }
 
 .input_yuh-style {
